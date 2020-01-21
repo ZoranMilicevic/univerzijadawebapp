@@ -20,6 +20,7 @@ const routes = [
   },
   {
     path: '/organizerMain',
+    redirect: '/organiserRequests',
     name: 'organizerMain',
     component: () => import('../Organizer/OrganizerMain.vue')
   },
@@ -52,6 +53,28 @@ const routes = [
     path: '/organiserRequestInfo',
     name: 'organiserRequestInfo',
     component: () => import('../Organizer/OrganiserRequestInfo.vue')
+  },
+
+  {
+    path: '/studentMain',
+    redirect: '/studentGames',
+    name: 'studentMain',
+    component: () => import('../Student/StudentMain.vue')
+  },
+  {
+    path: '/studentGames',
+    name: 'studentGames',
+    component: () => import('../Student/StudentGames.vue')
+  },
+  {
+    path: '/studentInfo',
+    name: 'studentInfo',
+    component: () => import('../Student/StudentInfo.vue')
+  },
+  {
+    path: '/studentChangePass',
+    name: 'studentChangePass',
+    component: () => import('../Student/StudentChangePass.vue')
   },
 ]
 

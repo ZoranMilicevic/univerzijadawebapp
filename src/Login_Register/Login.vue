@@ -40,14 +40,14 @@ export default {
     methods: {
         login(){
             var user = this.users.filter(user => user.username == this.username & user.password == this.password);
-
+            //localStorage.clear();
             if(user.length != 0){
                 localStorage.setItem('currentUser', JSON.stringify(user[0]))
                 if(user[0].isAdmin == true){
                     router.push('/organizerMain')
                 }
                 else {
-                    //todo student main
+                    router.push('/studentMain')
                 }
                 this.$alert("Uspesno ste se prijavili na sistem.", "Uspesno", "success");
             }

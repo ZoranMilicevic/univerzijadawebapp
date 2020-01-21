@@ -1,16 +1,16 @@
 <template>
     <div>
-        <OrganiserNavbar/>
+        <StudentNavbar/>
         <router-view></router-view>
     </div>
 </template>
 
 <script>
-import OrganiserNavbar from './OgraniserNavbar'
+import StudentNavbar from './StudentNavbar'
 export default {
-    name: "OrganizatorMain",
+    name: "StudentMain",
     components: {
-        OrganiserNavbar
+        StudentNavbar
     }
 }
 </script>
