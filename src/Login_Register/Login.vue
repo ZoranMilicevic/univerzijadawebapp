@@ -1,6 +1,9 @@
 <template>
     <div>
         <HeaderLogin/>
+        <br/>
+        <br/>
+        <br/>
         <div align = "center" class="align-middle">
             <form>
                 <div class="form-group w-25">
@@ -19,7 +22,6 @@
 
 <script>
 import users from '../data/users.js';
-import studentRequests from '../data/organizer/studentRequests'
 import router from '../router/index.js'
 import HeaderLogin from './HeaderLogin'
 
@@ -33,7 +35,6 @@ export default {
             username: '',
             password: '',
             users: users,
-            studentRequests: studentRequests
         }
     },
     methods: {
@@ -63,19 +64,9 @@ export default {
         else {
             this.users = JSON.parse(localStorage.getItem('users'));
         }
-
-        if(localStorage.getItem('studentRequests')==null){
-            localStorage.setItem('studentRequests', JSON.stringify(this.studentRequests))
-        }
-        else {
-            this.studentRequests = JSON.parse(localStorage.getItem('studentRequests'))
-        }
     }
 }
 </script>
-
-
-
 
 <style>
 

@@ -1,6 +1,8 @@
 <template>
     <div>
-        <h1>Univerzijada 2020</h1>
+        <br/>
+        <br/>
+        <h1 class = "text-dark">Univerzijada 2020</h1>
         <div id="nav">
             <router-link to="/">Prijava na sistem</router-link> |
             <router-link to="/register">Registracija na sistem</router-link>

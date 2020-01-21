@@ -1,26 +1,31 @@
 <template>
      <div align = "center" class="align-middle">
     <OrganiserNavbar/>
-        <h1 v-bind="username">Informacije o korisniku {{this.curUser.username}}</h1>
+        <br/>
+        <br/>
+        <h1 v-bind="username" class="text-dark">Informacije o korisniku {{this.curUser.username}}</h1>
+        <br/>
+        <br/>
+        <br/>
         <form class="form-group w-25">
-                <table class="table table-bordered">
+                <table class="table table-borderless">
                     <tr>   
-                        <td>Ime: </td>
+                        <td> <b>Ime:</b> </td>
                         <td><input type="text" class="form-control" v-model="name" v-bind:readonly="readonlyFlag" />  </td>
                     </tr>
 
                     <tr>   
-                        <td>Prezime:  </td>
+                        <td><b>Prezime: </b> </td>
                         <td><input type="text" class="form-control" v-model="surname"  v-bind:readonly="readonlyFlag" />  </td>
                     </tr>
 
                     <tr>   
-                        <td>Telefon:  </td>
+                        <td><b>Telefon: </b>  </td>
                         <td><input type="text" class="form-control" v-model="telephone" v-bind:readonly="readonlyFlag" />  </td>
                     </tr>
 
                     <tr>
-                        <td>Adresa:  </td>
+                        <td><b>Adresa:</b>  </td>
                         <td><input type="text" class="form-control" v-model="address" v-bind:readonly="readonlyFlag" />  </td>
                     </tr>
 

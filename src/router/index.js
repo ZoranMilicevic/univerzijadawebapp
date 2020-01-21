@@ -38,6 +38,21 @@ const routes = [
     name: 'organiserRequests',
     component: () => import('../Organizer/OrganiserRequests.vue')
   },
+  {
+    path: '/organiserReservation',
+    name: 'organiserReservation',
+    component: () => import('../Organizer/OrganiserReservation.vue')
+  },
+  {
+    path: '/organiserReservationInfo',
+    name: 'organiserReservationInfo',
+    component: () => import('../Organizer/OrganiserReservationInfo.vue')
+  },
+  {
+    path: '/organiserRequestInfo',
+    name: 'organiserRequestInfo',
+    component: () => import('../Organizer/OrganiserRequestInfo.vue')
+  },
 ]
 
 const router = new VueRouter({

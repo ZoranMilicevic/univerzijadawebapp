@@ -2,17 +2,24 @@
     <div>
     <OrganiserNavbar/>
         <div align = "center" class="align-middle">
-            <h1>Promena lozinke</h1>
-            <form>
-                <div class="form-group w-25">
-                    <input type="username" class="form-control" placeholder="Stara lozinka" v-model="oldPass">
-                </div>
+            <br/>
+            <br/>   
+            <h1 class="text-dark">Promena lozinke</h1>
+            <br/>
+            <br/>   
+            <br/>
+            <form v-on:submit="changePass">
+                <div align="center">
+                    <div class="form-group w-25">
+                        <input type="password" class="form-control" placeholder="Stara lozinka" v-model="oldPass" />
+                    </div>
+                        
+                    <div class="form-group w-25">
+                        <input type="password" class="form-control" placeholder="Nova Lozinka" v-model="newPass"  />
+                    </div>
 
-                <div class="form-group w-25">
-                    <input type="password" class="form-control" placeholder="Nova Lozinka" v-model="newPass">
+                    <button type="submit" class="btn btn-primary">Promeni lozinku</button>
                 </div>
-
-                <button type="submit" class="btn btn-primary" @click="changePass">Promeni lozinku</button>
             </form>
         </div>
     </div>

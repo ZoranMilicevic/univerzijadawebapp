@@ -34,4 +34,10 @@ export default {
 #nav a.router-link-exact-active {
   color: #42b983;
 }
+
+body{
+    background: url('C:\Users\Zoran Milicevic\Desktop\Fakultet\Master - Prvi Semestar\PKI\Projekat\slike\imageedit_7_4696768861.png');
+    
+}
+
 </style>

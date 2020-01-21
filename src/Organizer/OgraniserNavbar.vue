@@ -8,30 +8,29 @@
   <div class="collapse navbar-collapse" id="navbarSupportedContent">
     <ul class="navbar-nav mr-auto">
         <li class="nav-item">
-             <router-link class = "nav-link" to = '#'>Pregled</router-link>
+             <router-link class = "nav-link" to = '/organiserRequests' selected>Studentski zahtevi</router-link>
         </li>
         <li class="nav-item">
-            <router-link class = "nav-link" to = '/organiserRequests'>Studentski zahtevi</router-link>
+            <router-link class = "nav-link" to = '/organiserReservation'>Rezervisanje hala</router-link>
         </li>
-        <li>
-            <router-link class = "nav-link" to = '#'>Rezervisanje hala</router-link>
+        <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                Moji podaci
+                </a>
+                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <router-link class="dropdown-item" to="/organiserInformation">Informacije</router-link>
+                <router-link class="dropdown-item" to="/organiserChangePass">Promena lozinke</router-link>
+                </div>
         </li>
     </ul>
   </div>
 
     <div class="navbar-collapse collapse w-300 order-3">
         <ul class="navbar-nav ml-auto">
-            <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                Nalog
-                </a>
-                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                <router-link class="dropdown-item" to="/organiserInformation">Informacije</router-link>
-                <router-link class="dropdown-item" to="/organiserChangePass">Promena lozinke</router-link>
-                <div class="dropdown-divider"></div>
-                <router-link class="dropdown-item" to="/">Odjava</router-link>
-                </div>
+            <li class="nav-item">
+                <router-link class = "nav-link" to = '/'>Odjava</router-link>
             </li>
+
         </ul>
     </div>
 </nav>
