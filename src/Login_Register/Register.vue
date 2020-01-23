@@ -4,27 +4,27 @@
         <form v-on:submit="registerUser">
             <div align="center">
                 <div class="form-group w-25">
-                    <input type="username" class="form-control" placeholder="Ime" v-model="name" required="true" oninvalid="this.setCustomValidity('Ovo polje ne sme biti prazno')" />
+                    <input type="username" class="form-control" placeholder="Ime" v-model="name" required="true" oninput = "this.setCustomValidity('')" oninvalid="this.setCustomValidity('Ovo polje ne sme biti prazno')" />
                 </div>
 
                 <div class="form-group w-25">
-                    <input type="username" class="form-control" placeholder="Prezime" v-model="surname" required="true" oninvalid="this.setCustomValidity('Ovo polje ne sme biti prazno')" />
+                    <input type="username" class="form-control" placeholder="Prezime" v-model="surname" required="true" oninput = "this.setCustomValidity('')" oninvalid="this.setCustomValidity('Ovo polje ne sme biti prazno')" />
                 </div>
 
                 <div class="form-group w-25">
-                        <input type="text" class="form-control" placeholder="Kontakt telefon" v-model="telephone" required="true" oninvalid="this.setCustomValidity('Ovo polje ne sme biti prazno')" />
+                        <input type="text" class="form-control" placeholder="Kontakt telefon" v-model="telephone" required="true" oninput = "this.setCustomValidity('')" oninvalid="this.setCustomValidity('Ovo polje ne sme biti prazno')" />
                 </div>
 
                 <div class="form-group w-25">
-                    <input type="text" class="form-control" placeholder="Adresa" v-model="address" required="true" oninvalid="this.setCustomValidity('Ovo polje ne sme biti prazno')" />
+                    <input type="text" class="form-control" placeholder="Adresa" v-model="address" required="true" oninput = "this.setCustomValidity('')" oninvalid="this.setCustomValidity('Ovo polje ne sme biti prazno')" />
                 </div>
 
                 <div class="form-group w-25">
-                    <input type="username" class="form-control" placeholder="Korisnicko ime" v-model="username" required="true" oninvalid="this.setCustomValidity('Ovo polje ne sme biti prazno')" />
+                    <input type="username" class="form-control" placeholder="Korisnicko ime" v-model="username" required="true" oninput = "this.setCustomValidity('')" oninvalid="this.setCustomValidity('Ovo polje ne sme biti prazno')" />
                 </div>
                     
                 <div class="form-group w-25">
-                    <input type="password" class="form-control" placeholder="Lozinka" v-model="password" required="true" oninvalid="this.setCustomValidity('Ovo polje ne sme biti prazno')" />
+                    <input type="password" class="form-control" placeholder="Lozinka" v-model="password"  required="true" oninput = "this.setCustomValidity('')" oninvalid="this.setCustomValidity('Ovo polje ne sme biti prazno')" />
                 </div>
 
                 <button type="submit" class="btn btn-primary">Registruj se</button>

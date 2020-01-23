@@ -7,11 +7,11 @@
         <div align = "center" class="align-middle">
             <form>
                 <div class="form-group w-25">
-                    <input type="username" class="form-control" placeholder="Korisnicko ime" v-model="username">
+                    <input type="username" class="form-control" placeholder="Korisnicko ime" v-model="username"  required="true" oninput = "this.setCustomValidity('')" oninvalid="this.setCustomValidity('Ovo polje ne sme biti prazno')">
                 </div>
 
                 <div class="form-group w-25">
-                    <input type="password" class="form-control" placeholder="Lozinka" v-model="password">
+                    <input type="password" class="form-control" placeholder="Lozinka" v-model="password"  required="true" oninput = "this.setCustomValidity('')" oninvalid="this.setCustomValidity('Ovo polje ne sme biti prazno')">
                 </div>
 
                 <button type="submit" class="btn btn-primary" @click="login">Prijavi se</button>
@@ -39,8 +39,8 @@ export default {
     },
     methods: {
         login(){
+            localStorage.clear();
             var user = this.users.filter(user => user.username == this.username & user.password == this.password);
-            //localStorage.clear();
             if(user.length != 0){
                 localStorage.setItem('currentUser', JSON.stringify(user[0]))
                 if(user[0].isAdmin == true){
@@ -65,6 +65,7 @@ export default {
             this.users = JSON.parse(localStorage.getItem('users'));
         }
     }
+    
 }
 </script>
 

@@ -11,11 +11,11 @@
             <form v-on:submit="changePass">
                 <div align="center">
                     <div class="form-group w-25">
-                        <input type="password" class="form-control" placeholder="Stara lozinka" v-model="oldPass" />
+                        <input type="password" class="form-control" placeholder="Stara lozinka" v-model="oldPass" required="true" oninput = "this.setCustomValidity('')" oninvalid="this.setCustomValidity('Ovo polje ne sme biti prazno')" />
                     </div>
                         
                     <div class="form-group w-25">
-                        <input type="password" class="form-control" placeholder="Nova Lozinka" v-model="newPass"  />
+                        <input type="password" class="form-control" placeholder="Nova Lozinka" v-model="newPass" required="true" oninput = "this.setCustomValidity('')" oninvalid="this.setCustomValidity('Ovo polje ne sme biti prazno')" />
                     </div>
 
                     <button type="submit" class="btn btn-primary">Promeni lozinku</button>

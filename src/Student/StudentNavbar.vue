@@ -16,7 +16,7 @@
                 </a>
                 <div class="dropdown-menu" aria-labelledby="navbarDropdown">
                 <router-link class="dropdown-item" to="/" >Informacije o smestaju i restoranu</router-link>
-                <router-link class="dropdown-item" to="/" >Zahtev za promenu</router-link>
+                <router-link class="dropdown-item" to="/studentReqest">Zahtev za promenu</router-link>
                 </div>
         </li>
         <li class="nav-item dropdown">
@@ -24,9 +24,9 @@
                 Turisticki sadrzaj
                 </a>
                 <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                <router-link class="dropdown-item" to="/">Kalemegdan</router-link>
-                <router-link class="dropdown-item" to="/">Hram Svetog Save</router-link>
-                <router-link class="dropdown-item" to="/">Ada Ciganlija</router-link>
+                <router-link class="dropdown-item" to="/kalemegdan">Kalemegdan</router-link>
+                <router-link class="dropdown-item" to="/kalemegdan">Hram Svetog Save</router-link>
+                <router-link class="dropdown-item" to="/kalemegdan">Ada Ciganlija</router-link>
                 </div>
         </li>
         <li class="nav-item dropdown">
