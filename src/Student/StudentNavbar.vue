@@ -15,7 +15,7 @@
                 Smestaj i restoran
                 </a>
                 <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                <router-link class="dropdown-item" to="/" >Informacije o smestaju i restoranu</router-link>
+                <router-link class="dropdown-item" to="/studentAccomodation" >Informacije o smestaju i restoranu</router-link>
                 <router-link class="dropdown-item" to="/studentReqest">Zahtev za promenu</router-link>
                 </div>
         </li>

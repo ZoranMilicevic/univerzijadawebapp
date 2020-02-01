@@ -86,6 +86,11 @@ const routes = [
     name: 'kalemegdan',
     component: () => import('../Student/Kalemegdan.vue')
   },
+  {
+    path: '/studentAccomodation',
+    name: 'studentAccomodation',
+    component: () => import('../Student/StudentAccomodation.vue')
+  },
 ]
 
 const router = new VueRouter({
